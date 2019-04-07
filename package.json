@@ -1,0 +1,26 @@
+{
+  "name": "Ventilation control example",
+  "version": "1.0.0",
+  "description": "A sample application built that shows how MQTT could be used to manage a ventilation system.",
+  "main": "controller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shtorm/ventilation-system-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shtorm/ventilation-system-example/issues"
+  },
+  "homepage": "https://github.com/shtorm/ventilation-system-example#readme",
+  "dependencies": {
+    "mqtt": "^1.6.3"
+  },
+  "devDependencies": {
+    "standard": "^5.4.1"
+  }
+}
