@@ -43,9 +43,9 @@ function handleFan (message) {
 function processSensorScenario() {
   console.log('cuurent humidity: ', sensorState.humidity)
   switch (true) {
-    case sensorState.humidity > 50:
+    case sensorState.humidity > 70:
       return handleFanOn()
-    case sensorState.humidity < 45:
+    case sensorState.humidity < 55:
       return handleFanOff()
   }
   }
