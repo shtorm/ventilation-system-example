@@ -45,7 +45,7 @@ function processSensorScenario() {
   switch (true) {
     case sensorState.humidity > 50:
       return handleFanOn()
-    case sensorState.humidity < 40:
+    case sensorState.humidity < 45:
       return handleFanOff()
   }
   }
