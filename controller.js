@@ -55,6 +55,7 @@ function processSensorScenario() {
       console.log('Fan is ON')
       fanState.state = 'ON'
       client.publish('zigbee2mqtt/0x00124b001b7f00f6/set', 'ON')
+      autoOff()
     }
   }
 
@@ -68,14 +69,18 @@ function processSensorScenario() {
 
 // --- For Demo Purposes Only ----//
 
-// simulate switching fan
-// setTimeout(() => {
-//   console.log('fan is on')
-//   handleFanOn()
-// }, 5000)
+function autoOn()
+{
+  setTimeout(() => {
+    console.log('fan is on')
+    handleFanOn()
+  }, 5000)
+}
 
-// simulate switching fan
-// setTimeout(() => {
-//   console.log('fan is off')
-//   handleFanOff()
-// }, 20000)
+function autoOff()
+{
+  setTimeout(() => {
+    console.log('fan is off')
+    handleFanOff()
+  }, 3600000)
+}
